@@ -29,3 +29,18 @@ console.log(factorialize(5)); // factorialize(5) should return 120
 console.log(factorialize(10)); // factorialize(10) should return 3628800
 console.log(factorialize(20)); // factorialize(20) should return 2432902008176640000
 console.log(factorialize(0)); // factorialize(0) should return 1
+
+
+function factorializeAlt(num) {
+  if (num === 0) {
+    return 1;
+  }
+  return num * factorializeAlt(num -= 1);
+}
+
+
+console.log(typeof factorializeAlt(5)); // factorialize(5) should return a number
+console.log(factorializeAlt(5)); // factorialize(5) should return 120
+console.log(factorializeAlt(10)); // factorialize(10) should return 3628800
+console.log(factorializeAlt(20)); // factorialize(20) should return 2432902008176640000
+console.log(factorializeAlt(0)); // factorialize(0) should return 1
