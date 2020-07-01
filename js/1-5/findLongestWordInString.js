@@ -9,15 +9,14 @@ function findLongestWordLength(str) {
 
 
 function findLongestWordLength(str) {
-  var arr = str.split(' ').reduce(function (previousValue, currentItem) {
+  let arr = str.split(' ').reduce(function (previousValue, currentItem) {
     if (previousValue.length > currentItem.length) {
       return previousValue;
     } else {
       return currentItem;
     }
   });
-  str = arr.toString();
-  return str.length;
+  return arr.toString().length;
 }
 
 
@@ -30,7 +29,7 @@ console.log(findLongestWordLength("What if we try a super-long word such as otor
 
 
 function findLongestWordLengthAlt(str) {
-  var arr = str.split(' '), i, n = arr.length, max = 0;
+  let arr = str.split(' '), i, n = arr.length, max = 0;
   for (i = 0; i < n; i += 1) {
     if (arr[i].length > max) {
       max = arr[i].length;

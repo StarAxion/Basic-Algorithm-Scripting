@@ -10,8 +10,7 @@ function findElement(arr, func) {
 
 
 function findElement(arr, func) {
-  var num = arr.find(func);
-  return num;
+  return arr.find(func);
 }
 
 
@@ -20,11 +19,10 @@ console.log(findElement([1, 3, 5, 9], function (num) { return num % 2 === 0; }))
 
 
 function findElementAlt(arr, func) {
-  var i, arrSize = arr.length, num = 0;
+  let i, arrSize = arr.length, num = 0;
   for (i = 0; i < arrSize; i += 1) {
     if (func(arr[i])) {
-      num = arr[i];
-      return num;
+      return arr[i];
     }
   }
   return undefined;

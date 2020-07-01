@@ -8,7 +8,7 @@ function chunkArrayInGroups(arr, size) {
 
 
 function chunkArrayInGroups(arr, size) {
-  var resultArr = [];
+  let resultArr = [];
   while (arr.length > 0) {
     resultArr.push(arr.splice(0, size));
   }

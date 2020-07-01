@@ -9,8 +9,7 @@ function booWho(bool) {
 
 
 function booWho(bool) {
-  bool = typeof bool === 'boolean';
-  return bool;
+  return typeof bool === 'boolean';
 }
 
 

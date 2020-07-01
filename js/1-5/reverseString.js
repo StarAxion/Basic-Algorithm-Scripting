@@ -10,9 +10,7 @@ function reverseString(str) {
 
 
 function reverseString(str) {
-  var arr = str.split('');
-  str = arr.reverse().join('');
-  return str;
+  return str.split('').reverse().join('');
 }
 
 
@@ -23,7 +21,7 @@ console.log(reverseString("Greetings from Earth")); // reverseString("Greetings 
 
 
 function reverseStringAlt(str) {
-  var i, n = str.length - 1, invertedStr = '';
+  let i, n = str.length - 1, invertedStr = '';
   for (i = n; i >= 0; i -= 1) {
     invertedStr += str[i];
   }

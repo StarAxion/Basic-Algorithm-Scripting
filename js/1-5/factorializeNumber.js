@@ -13,9 +13,9 @@ function factorialize(num) {
 
 function factorialize(num) {
   if (num === 0) {
-    num = 1;
+    return 1;
   } else {
-    var i, n = num - 1;
+    let i, n = num - 1;
     for (i = n; i > 0; i -= 1) {
       num *= i;
     }

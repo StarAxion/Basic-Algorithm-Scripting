@@ -9,12 +9,10 @@ function titleCase(str) {
 
 
 function titleCase(str) {
-  let arr = str.toLowerCase().split(' ');
-  arr = arr.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+  let arr = str.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1));
   // or:
-  // arr = arr.map(word => word.replace(word.charAt(0), word.charAt(0).toUpperCase()));
-  str = arr.join(' ');
-  return str;
+  // let arr = str.toLowerCase().split(' ').map(word => word.replace(word.charAt(0), word.charAt(0).toUpperCase()));
+  return arr.join(' ');
 }
 
 

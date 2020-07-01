@@ -10,7 +10,7 @@ function largestOfFour(arr) {
 
 
 function largestOfFour(arr) {
-  arr = arr.map(function (subArr) {
+  return arr.map(function (subArr) {
     return subArr.reduce(function (previousValue, currentItem) {
       if (previousValue > currentItem) {
         return previousValue;
@@ -19,7 +19,6 @@ function largestOfFour(arr) {
       }
     });
   });
-  return arr;
 }
 
 
@@ -30,9 +29,9 @@ console.log(largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], 
 
 
 function largestOfFourAlt(arr) {
-  var i, arrSize = arr.length, maxNumbersArr = [];
+  let i, arrSize = arr.length, maxNumbersArr = [];
   for (i = 0; i < arrSize; i += 1) {
-    var j, subArrSize = arr[i].length, max = arr[i][0];
+    let j, subArrSize = arr[i].length, max = arr[i][0];
     for (j = 1; j < subArrSize; j += 1) {
       if (arr[i][j] > max) {
         max = arr[i][j];

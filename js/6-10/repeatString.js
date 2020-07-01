@@ -10,7 +10,7 @@ function repeatStringNumTimes(str, num) {
 
 
 function repeatStringNumTimes(str, num) {
-  var repStr = '', i;
+  let repStr = '', i;
   if (num > 0) {
     for (i = 0; i < num; i += 1) {
       repStr += str;

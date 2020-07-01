@@ -11,8 +11,7 @@ function confirmEnding(str, target) {
 
 
 function confirmEnding(str, target) {
-  str = target === str.slice(-target.length);
-  return str;
+  return target === str.slice(-target.length);
 }
 
 
